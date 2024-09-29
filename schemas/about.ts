@@ -23,6 +23,12 @@ export default {
       validation: (Rule: { required: () => string; }) => Rule.required(),
     },
     {
+      name: 'role',
+      title: 'Role',
+      type: 'string',
+      validation: (Rule: { required: () => string; }) => Rule.required(),
+    },
+    {
       //sanity rich text editor
       name: 'description',
       title: 'Description',

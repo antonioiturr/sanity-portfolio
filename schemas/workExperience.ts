@@ -13,6 +13,12 @@ export default {
       validation: (Rule: { required: () => string; }) => Rule.required(),
     },
     {
+      name: 'companyWebsite',
+      title: 'Company Website',
+      type: 'url',
+      validation: (Rule: { required: () => string; }) => Rule.required(),
+    },
+    {
       name: 'position',
       title: 'Position',
       type: 'string',
@@ -34,7 +40,6 @@ export default {
       name: 'explicitDuration',
       title: 'Explicit Duration',
       type: 'string',
-      validation: (Rule: { required: () => string; }) => Rule.required(),
     },
     {
       name: 'present',
