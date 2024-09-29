@@ -31,6 +31,12 @@ export default {
       type: 'date',
     },
     {
+      name: 'explicitDuration',
+      title: 'Explicit Duration',
+      type: 'string',
+      validation: (Rule: { required: () => string; }) => Rule.required(),
+    },
+    {
       name: 'present',
       title: 'Present',
       type: 'boolean',
@@ -39,7 +45,8 @@ export default {
     {
       name: 'description',
       title: 'Description',
-      type: 'text',
+      type: 'array',
+      of: [{ type: 'block' }],
       validation: (Rule: { required: () => string; }) => Rule.required(),
     },
   ],

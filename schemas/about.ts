@@ -17,8 +17,8 @@ export default {
       validation: (Rule: { required: () => any; }) => Rule.required(),
     },
     {
-      name: 'title',
-      title: 'Title',
+      name: 'name',
+      title: 'Name',
       type: 'string',
       validation: (Rule: { required: () => string; }) => Rule.required(),
     },
